@@ -1,6 +1,6 @@
 import Link from "next/link";
 import SearchBar from "./SearchBar";
-import { FaBell, FaHome, FaShoppingCart } from "react-icons/fa";
+import { FaBell, FaHome } from "react-icons/fa";
 import Image from "next/image";
 import ShoppingCartIcon from "./ShoppingCartIcon";
 
