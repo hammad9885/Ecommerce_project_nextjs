@@ -3,8 +3,11 @@ import SearchBar from "./SearchBar";
 import { FaBell, FaHome } from "react-icons/fa";
 import Image from "next/image";
 import ShoppingCartIcon from "./ShoppingCartIcon";
+import { useClerk } from "@clerk/nextjs";
 
 function Navbar() {
+   const { openSignIn } = useClerk();
+   
   return (
     <>
       <nav className="flex justify-between items-center border-b border-gray-200 pb-4">
@@ -27,7 +30,7 @@ function Navbar() {
          </Link>
          <FaBell className="w-4 h-4 text-gray-600" />
          <ShoppingCartIcon />
-         <Link href="/login">
+         <Link href="/">
          Sign in
          </Link>
         </div>

@@ -46,7 +46,6 @@ const ProductPage = async ({
   const selectedColor = color || (product.colors[0] as string);
   return (
     <div className="flex flex-col gap-4 lg:flex-row md:gap-12 mt-12">
-      {/* IMAGE */}
       <div className="w-full lg:w-5/12 relative aspect-[2/3]">
         <Image
           src={product.images[selectedColor]}
@@ -55,7 +54,6 @@ const ProductPage = async ({
           className="object-contain rounded-md"
         />
       </div>
-      {/* DETAILS */}
       <div className="w-full lg:w-7/12 flex flex-col gap-4">
         <h1 className="text-2xl font-medium">{product.name}</h1>
         <p className="text-gray-500">{product.description}</p>
@@ -65,7 +63,6 @@ const ProductPage = async ({
           selectedSize={selectedSize}
           selectedColor={selectedColor}
         />
-        {/* CARD INFO */}
         <div className="flex items-center gap-2 mt-4">
           <Image
             src="/klarna.png"
